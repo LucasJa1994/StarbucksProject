@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#" class="logo"><img src="./assets/logo.png" /></a>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">O que há de novo</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>
+            Isso não é apenas um café<br />
+            isso é <span>Starbucks</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            eaque, molestias pariatur similique iure incidunt, dolor corrupti
+            vitae numquam, eos officia alias facere deleniti placeat sapiente
+            fuga aperiam. Nam, alias!<span class="pescond">sera que vao ver essa frase aqui? </span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            tempora veritatis, commodi, esse quisquam est sint reiciendis, magni
+            architecto cupiditate ex excepturi expedita culpa in iste! Nihil
+            perspiciatis accusantium provident.
+            <a href="#">Leia mais</a>
+          </p>
+        </div>
+        <div class="imgBox">
+          <img src="img1.png" class="starbucks" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="thumb1.png"
+            onclick="imgSlider('img1.png');mudaCirculoCor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="thumb2.png"
+            onclick="imgSlider('img2.png');mudaCirculoCor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="thumb3.png"
+            onclick="imgSlider('img3.png');mudaCirculoCor('#d752b1')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href=""><img src="facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(qualCoisa) {
+        document.querySelector(".starbucks").src = qualCoisa
+      }
+      function mudaCirculoCor(cor) {
+        const circle = document.querySelector(".circle")
+        circle.style.background = cor
+      }
+    </script>
+  </body>
+</html>
